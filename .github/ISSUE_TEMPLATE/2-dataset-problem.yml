@@ -1,0 +1,30 @@
+name: Dataset problem
+description: A file does not open, fails its checksum, or a CSV or table is broken.
+labels: [data]
+body:
+  - type: input
+    id: release
+    attributes:
+      label: Release
+      placeholder: "e.g. 11footy-2026-11-23"
+    validations:
+      required: true
+  - type: input
+    id: files
+    attributes:
+      label: Files
+      placeholder: "e.g. italy.serie-a.csv.zip"
+    validations:
+      required: true
+  - type: textarea
+    id: what
+    attributes:
+      label: What happened, and what you expected
+      description: Paste commands and messages as text. Remove your user name and folder paths first.
+    validations:
+      required: true
+  - type: dropdown
+    id: os
+    attributes:
+      label: Operating system
+      options: [Windows, macOS, Linux]

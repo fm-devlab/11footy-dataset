@@ -1,0 +1,11 @@
+blank_issues_enabled: false
+contact_links:
+  - name: Questions and ideas
+    url: https://github.com/fm-devlab/11footy-dataset/discussions
+    about: Ask about the files and the schema, or suggest a competition.
+  - name: The window or the models
+    url: https://github.com/fm-devlab/11footy/issues/new/choose
+    about: Problems with the desktop window or with Vesta belong in the 11footy repository.
+  - name: Security problem
+    url: https://github.com/fm-devlab/11footy-dataset/security/advisories/new
+    about: Report it privately, never in a public issue.

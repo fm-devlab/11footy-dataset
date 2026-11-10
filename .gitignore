@@ -1,0 +1,5 @@
+# The data files ship as release assets, never in git
+*.db
+*.db.xz
+*.csv.zip
+*.csv

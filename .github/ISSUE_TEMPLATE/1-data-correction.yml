@@ -1,0 +1,37 @@
+name: Data correction
+description: A score, goal, scorer, minute, line-up or date in the dataset is wrong or missing.
+labels: [correction]
+body:
+  - type: input
+    id: match
+    attributes:
+      label: Match
+      placeholder: "e.g. 2026-11-22, Serie A, Home FC v Away FC"
+    validations:
+      required: true
+  - type: input
+    id: where
+    attributes:
+      label: Release, file and table
+      placeholder: "e.g. 11footy-2026-11-23, italy.serie-a, match_events"
+    validations:
+      required: true
+  - type: textarea
+    id: dataset-says
+    attributes:
+      label: What the dataset says
+    validations:
+      required: true
+  - type: textarea
+    id: correct
+    attributes:
+      label: What is correct
+    validations:
+      required: true
+  - type: input
+    id: reference
+    attributes:
+      label: A public reference anyone can check
+      description: A link to an official match report or a similar public record.
+    validations:
+      required: true

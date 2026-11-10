@@ -1,0 +1,15 @@
+name: Question
+description: How to read a file, a table or a column. Discussions work too.
+labels: [question]
+body:
+  - type: textarea
+    id: question
+    attributes:
+      label: Your question
+    validations:
+      required: true
+  - type: input
+    id: where
+    attributes:
+      label: The file, table or column it is about, if any
+      placeholder: "e.g. shots.xg"
